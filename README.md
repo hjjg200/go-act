@@ -8,7 +8,7 @@ import (
     . "github.com/hjjg200/go-act" // import . so that you don't have to write "act."
 )
 func Foo() (bar int, err error) {
-    defer Catch(&err) // Should the function panic, the error that caused panic, the error will be captured into err
+    defer Catch(&err) // Should the function panic, the error that caused panic will be captured into err
     
     // Try
     n, err := Foo2()
